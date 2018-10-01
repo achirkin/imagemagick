@@ -3,4 +3,4 @@ name: snapshot
 resolver: lts-12.10
 
 packages:
-  - https://github.com/achirkin/imagemagick/releases/download/v0.0.4.2-12.10/imagemagick-0.0.4.2.tar.gz
+  - https://github.com/achirkin/imagemagick/releases/download/v0.0.4.2-12.10-2/imagemagick-0.0.4.2.tar.gz
