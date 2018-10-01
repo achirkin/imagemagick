@@ -88,7 +88,10 @@ Library
         cpp-options:  -DCABAL_OS_DARWIN
   if os(windows)
         cpp-options:  -DCABAL_OS_WINDOWS
-  pkgconfig-depends:  ImageMagick, MagickWand >= 6.7
+  if os(linux)
+    pkgconfig-depends:  MagickCore, MagickWand >= 6.7
+  else
+    pkgconfig-depends:  ImageMagick, MagickWand >= 6.7
   Build-tools:        hsc2hs
 
 executable            resize
